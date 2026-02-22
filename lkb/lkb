@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+SOCKET_PATH="$XDG_RUNTIME_DIR/lkbd.sock"
+
+printf "L" | nc -U "$SOCKET_PATH" 

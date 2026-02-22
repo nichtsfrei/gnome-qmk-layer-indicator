@@ -1,0 +1,15 @@
+[Unit]
+Description=Layered Keyboard Daemon
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/lkbd
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+RestartSec=5
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

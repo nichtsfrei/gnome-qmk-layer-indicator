@@ -1,0 +1,8 @@
+{
+  "name": "qmk-layer",
+  "description": "shows the layer of a qmk keyboard",
+  "uuid": "qmklayer@nichtsfrei.de",
+  "shell-version": [
+    "49"
+  ]
+}
